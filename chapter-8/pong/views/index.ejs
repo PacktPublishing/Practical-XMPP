@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>XMPP Pong</title>
+  <style type="text/css">
+    body { background-color: #eee; }
+    #container { margin:0 auto; width: 640px; }
+    #pong { border: 1px solid; background-color: #fff; }
+  </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>XMPP Pong </h1>
+      <p>
+        <form>
+          Username:
+          <input type="text" id="username" />
+          Password:
+          <input type="password" id="password" />
+          Opponent JID:
+          <input type="text" id="opponent" />
+          <button type="button" onclick="connect()">Connect</button>
+        </form>
+      </p>
+      <canvas id="pong" width="1000" height="800" tabindex="1">
+        <p>This browser does not support the HTML5 Canvas element.</p>
+      </canvas>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/scripts/primus.js"></script>
+    <script src="/scripts/pong.js"></script>
+  </body>
+</html>

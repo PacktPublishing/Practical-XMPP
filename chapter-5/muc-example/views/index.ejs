@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <script type="text/javascript" src="/scripts/primus.js"></script>
+        <script type="text/javascript"
+                src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="/scripts/xmpp.js"></script>
+    </head>
+    <body>
+      <section id="room-list">
+        <h1>Chat room system</h1>
+        <h2>Choose a chat room to join</h2>
+        <ul class="js-chat-room-list">
+          <li>Loading chat room list</li>
+        </ul>
+        <h2>Choose a nickname</h2>
+        <input name="nick" required="true" placeholder="Enter nickname here" />
+        <button type="button">Join room</button>
+      </section>
+      <section id="chat-window">
+        <h2><em>room@jid</em></h2>
+        <div class="chat">
+          <dl></dl>
+        </div>
+        <div class="user-list">
+          <ul>
+            <li data-role="placeholder">Users will appear here</li>
+          </ul>
+        </div>
+        <div class="post">
+          <textarea rows="3"></textarea>
+          <button type="button">Post</button>
+        </div>
+      </section>
+    </body>
+</html>

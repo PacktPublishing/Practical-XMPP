@@ -1,0 +1,126 @@
+body {
+    font-family: "Verdana";
+    margin: 0 auto;
+    width: 80%;
+    background-color: #EEEEEE;
+}
+
+h1 {
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+#room-list ul li {
+  display: block;
+  cursor: pointer;
+  padding: 10px 10px;
+  border: 2px solid #0000FF;
+  border-radius: 10px;
+  width: 75%;
+  background-color: #FFFFFF;
+  margin-bottom: 3px;
+}
+ 
+#room-list li.selected {
+  background-color: #0000FF;
+  color: #FFFFFF;
+}
+
+#room-list input {
+  padding: 10px;
+  display: block;
+  width: 90%;
+}
+
+#room-list button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #00FF00;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#chat-window {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+}
+
+#chat-window button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
+#chat-window .chat {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  right: 35%;
+  bottom: 75px;
+  overflow: auto;
+  padding: 5px;
+  background-color: #FFFFFF;
+}
+
+#chat-window .chat dt {
+  float: left;
+  width: 80px;
+  overflow: hidden; 
+}
+
+#chat-window .chat dt:after {
+  content: ': ';
+}
+
+#chat-window .chat dd {
+  margin-left: 85px;
+}
+
+#chat-window .post {
+  bottom: 5px;
+  left: 0px;
+  position: absolute;
+  width: 99%;
+}
+
+#chat-window .post textarea {
+  width: 85%;
+}
+
+#chat-window .user-list {
+  right: 10px;
+  width: 30%;
+  top: 0px;
+  bottom: 75px;
+  position: absolute;
+  overflow: auto;
+}
+
+#chat-window .user-list ul {
+  padding: 0;
+}
+
+#chat-window .user-list ul li {
+  display: block;
+  padding: 10px 5px;
+  background-color: #FFFFFF;
+  margin-bottom: 3px;
+}
+
+#chat-window .user-list ul li.current-user:after {
+  content: ' (you)';
+}
+
+#chat-window .muc-private {
+  color: red;
+}
+
+#chat-window .muc-current-user {
+  color: blue;
+}
